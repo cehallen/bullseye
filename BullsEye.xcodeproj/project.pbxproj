@@ -286,6 +286,7 @@
 				F119CA8C1C63C8A70029B4F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
