@@ -31,23 +31,39 @@ class ViewController: UIViewController {
 
     @IBAction func showAlert() {
         let difference = abs(currentValue - targetValue)
-        let points = 100 - difference
+        var points = 100 - difference
+        
+        let title:String
+        if difference == 0 {
+            title = "Perfect!"
+            points += 100
+        } else if difference < 5 {
+            title = "Almost had it!"
+            if difference == 1 {
+                points += 50
+            }
+        } else if difference < 10 {
+            title = "Pretty good!"
+        } else {
+            title = "Not even close..."
+        }
         
         score += points
         
         let message = "You scored \(points) points"
         
-        let alert = UIAlertController(title: "Hello World!", message: message, preferredStyle: .Alert)
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .Alert)
         
         
-        let action = UIAlertAction(title: "OK!", style: .Default, handler: nil)
+        let action = UIAlertAction(title: "OK!", style: .Default,
+                                   handler: {action in
+                                                self.startNewRound()
+                                                self.updateLabels()
+                                            })
         
         alert.addAction(action)
         
         presentViewController(alert, animated: true, completion: nil)
-        
-        startNewRound()
-        updateLabels()
     }
     
     @IBAction func sliderMoved(slider: UISlider) {
