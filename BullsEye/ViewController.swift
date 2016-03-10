@@ -60,9 +60,7 @@ class ViewController: UIViewController {
                                                 self.startNewRound()
                                                 self.updateLabels()
                                             })
-        
         alert.addAction(action)
-        
         presentViewController(alert, animated: true, completion: nil)
     }
     
