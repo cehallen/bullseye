@@ -12,6 +12,7 @@
 		F119CA811C63C8A70029B4F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F119CA7F1C63C8A70029B4F0 /* Main.storyboard */; };
 		F119CA831C63C8A70029B4F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F119CA821C63C8A70029B4F0 /* Assets.xcassets */; };
 		F119CA861C63C8A70029B4F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F119CA841C63C8A70029B4F0 /* LaunchScreen.storyboard */; };
+		F178B4F91C9294B60009612C /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F178B4F81C9294B60009612C /* AboutViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		F119CA821C63C8A70029B4F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F119CA851C63C8A70029B4F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F119CA871C63C8A70029B4F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F178B4F81C9294B60009612C /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				F119CA7B1C63C8A70029B4F0 /* AppDelegate.swift */,
 				F119CA7D1C63C8A70029B4F0 /* ViewController.swift */,
+				F178B4F81C9294B60009612C /* AboutViewController.swift */,
 				F119CA7F1C63C8A70029B4F0 /* Main.storyboard */,
 				F119CA821C63C8A70029B4F0 /* Assets.xcassets */,
 				F119CA841C63C8A70029B4F0 /* LaunchScreen.storyboard */,
@@ -135,6 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F178B4F91C9294B60009612C /* AboutViewController.swift in Sources */,
 				F119CA7E1C63C8A70029B4F0 /* ViewController.swift in Sources */,
 				F119CA7C1C63C8A70029B4F0 /* AppDelegate.swift in Sources */,
 			);
